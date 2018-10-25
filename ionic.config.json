@@ -1,0 +1,7 @@
+{
+  "name": "fortniteStats",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

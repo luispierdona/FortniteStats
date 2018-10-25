@@ -1,0 +1,101 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      <ion-button color="primary" expand="block">Squad</ion-button>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="backField">
+
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <div>
+              <ion-button color="primary" expand="full" color="dark">SCORE
+                <ion-input readonly>{{ playerStats.score_squad }}</ion-input>
+              </ion-button>
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <div>
+              <ion-button color="primary">KILLS
+                <ion-input readonly>{{ playerStats.kills_squad }}</ion-input>
+              </ion-button>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div>
+              <ion-button color="primary">K/D
+                <ion-input readonly>{{ playerStats.kd_squad }}</ion-input>
+              </ion-button>
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <div>
+              <ion-button color="primary">WINRATE
+                <ion-input readonly>{{ playerStats.winrate_squad }}</ion-input>
+              </ion-button>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div>
+              <ion-button color="primary">Matches Played
+                <ion-input readonly>{{ playerStats.matchesplayed_squad }}</ion-input>
+              </ion-button>
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <div>
+              <ion-button color="primary" expand="full" color="dark">Place Top 1
+                <ion-input readonly>{{ playerStats.placetop1_squad }} ({{playerTopSolo}}%)</ion-input>
+              </ion-button>
+              <!--<ion-toolbar color="dark">-->
+                <!--<ion-item disabled>-->
+                  <!--<ion-range color="primary" pin="true" min="0" max="100" value="{{playerTopSolo}}"></ion-range>-->
+                <!--</ion-item>-->
+              <!--</ion-toolbar>-->
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <div>
+              <ion-button color="primary" expand="full" color="dark">Place Top 3
+                <ion-input readonly>{{ playerStats.placetop3_squad }} ({{playerTop10Solo}}%)</ion-input>
+              </ion-button>
+              <!--<ion-toolbar color="dark">-->
+                <!--<ion-item disabled>-->
+                  <!--<ion-range color="primary" pin="true" min="0" max="100" value="{{playerTop10Solo}}"></ion-range>-->
+                <!--</ion-item>-->
+              <!--</ion-toolbar>-->
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <div>
+              <ion-button color="primary" expand="full" color="dark">Place Top 6
+                <ion-input readonly>{{ playerStats.placetop6_squad }} ({{playerTop25Solo}}%)</ion-input>
+              </ion-button>
+              <!--<ion-toolbar color="dark">-->
+                <!--<ion-item disabled>-->
+                  <!--<ion-range color="primary" pin="true" min="0" max="100" value="{{playerTop25Solo}}"></ion-range>-->
+                <!--</ion-item>-->
+              <!--</ion-toolbar>-->
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+
+</ion-content>

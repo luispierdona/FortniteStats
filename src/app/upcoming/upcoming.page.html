@@ -1,0 +1,105 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>
+            <ion-button color="primary" expand="block">Upcoming</ion-button>
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="oneColorBack">
+  <ion-grid>
+    <!--Row 1-->
+    <ion-row>
+      <ion-col *ngIf="upcoming.items[0]">
+        <div>
+            <ion-img src="{{ upcoming.items[0].item.images.background }}"></ion-img>
+        </div>
+      </ion-col>
+      <ion-col *ngIf="upcoming.items[1]">
+        <div>
+            <ion-img src="{{ upcoming.items[1].item.images.background }}"></ion-img>
+        </div>
+      </ion-col>
+      <ion-col *ngIf="upcoming.items[2]">
+        <div>
+            <ion-img src="{{ upcoming.items[2].item.images.background }}"></ion-img>
+        </div>
+      </ion-col>
+    </ion-row>
+      <!--Row 2-->
+      <ion-row>
+          <ion-col *ngIf="upcoming.items[3]">
+              <div>
+                  <ion-img src="{{ upcoming.items[3].item.images.background }}"></ion-img>
+              </div>
+          </ion-col>
+          <ion-col *ngIf="upcoming.items[4]">
+              <div>
+                  <ion-img src="{{ upcoming.items[4].item.images.background }}"></ion-img>
+              </div>
+          </ion-col>
+          <ion-col *ngIf="upcoming.items[5]">
+              <div>
+                  <ion-img src="{{ upcoming.items[5].item.images.background }}"></ion-img>
+              </div>
+          </ion-col>
+      </ion-row>
+      <!--Row 3-->
+      <ion-row>
+          <ion-col *ngIf="upcoming.items[6]">
+              <div>
+                  <ion-img src="{{ upcoming.items[6].item.images.background }}"></ion-img>
+              </div>
+          </ion-col>
+          <ion-col *ngIf="upcoming.items[7]">
+              <div>
+                  <ion-img src="{{ upcoming.items[7].item.images.background }}"></ion-img>
+              </div>
+          </ion-col>
+          <ion-col *ngIf="upcoming.items[8]">
+              <div>
+                  <ion-img src="{{ upcoming.items[8].item.images.background }}"></ion-img>
+              </div>
+          </ion-col>
+      </ion-row>
+      <!--Row 4-->
+      <ion-row>
+          <ion-col *ngIf="upcoming.items[9]">
+              <div>
+                  <ion-img src="{{ upcoming.items[9].item.images.background }}"></ion-img>
+              </div>
+          </ion-col>
+          <ion-col *ngIf="upcoming.items[10]">
+              <div>
+                  <ion-img src="{{ upcoming.items[10].item.images.background }}"></ion-img>
+              </div>
+          </ion-col>
+          <ion-col *ngIf="upcoming.items[11]">
+              <div>
+                  <ion-img src="{{ upcoming.items[11].item.images.background }}"></ion-img>
+              </div>
+          </ion-col>
+      </ion-row>
+      <!--Row 5-->
+      <ion-row>
+          <ion-col *ngIf="upcoming.items[12]">
+              <div>
+                  <ion-img src="{{ upcoming.items[12].item.images.background }}"></ion-img>
+              </div>
+          </ion-col>
+          <ion-col *ngIf="upcoming.items[13]">
+              <div>
+                  <ion-img src="{{ upcoming.items[13].item.images.background }}"></ion-img>
+              </div>
+          </ion-col>
+          <ion-col *ngIf="upcoming.items[14]">
+              <div>
+                  <ion-img src="{{ upcoming.items[14].item.images.background }}"></ion-img>
+              </div>
+          </ion-col>
+      </ion-row>
+  </ion-grid>
+</ion-content>

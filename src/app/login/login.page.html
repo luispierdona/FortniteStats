@@ -1,0 +1,25 @@
+<!--<ion-header>-->
+  <!--<ion-toolbar>-->
+    <!--<ion-title>login</ion-title>-->
+  <!--</ion-toolbar>-->
+<!--</ion-header>-->
+
+<ion-content padding class="backMisc">
+
+  <ion-card >
+    <!--<ion-card-header>-->
+      <!--<ion-card-title>Fortnite Stats</ion-card-title>-->
+    <!--</ion-card-header>-->
+  
+    <ion-card-content>
+        <p> <b style="color: white;"> Write your name exactly as it is in the game </b> </p>
+        <ion-list>
+            <ion-item>
+                <ion-input placeholder="Username" [(ngModel)]="username" required></ion-input>
+            </ion-item>
+        </ion-list>
+        <ion-button color="primary" (click)="login()" expand="full">Find Me!</ion-button>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

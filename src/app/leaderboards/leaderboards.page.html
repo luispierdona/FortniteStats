@@ -1,0 +1,67 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>
+            <ion-button color="primary" expand="block">Leaderboards</ion-button>
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="backRed">
+
+                <ion-grid *ngFor="let top of top10.entries; let i = index;">
+                    <ion-button color="dark" expand="full">{{ top.username }}</ion-button>
+                    <ion-row>
+                        <ion-col>
+                            <div>
+                                <ion-button color="primary">KILLS
+                                    <ion-input readonly>{{ top.kills }}</ion-input>
+                                </ion-button>
+                            </div>
+                        </ion-col>
+                        <ion-col>
+                            <div>
+                                <ion-button color="primary">K/D
+                                    <ion-input readonly>{{ top.kd }}</ion-input>
+                                </ion-button>
+                            </div>
+                        </ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col>
+                            <div>
+                                <ion-button color="primary">SCORE
+                                    <ion-input readonly>{{ top.score }}</ion-input>
+                                </ion-button>
+                            </div>
+                        </ion-col>
+                        <ion-col>
+                            <div>
+                                <ion-button color="primary">WINS
+                                    <ion-input readonly>{{ top.wins }}</ion-input>
+                                </ion-button>
+                            </div>
+                        </ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col>
+                            <div>
+                                <ion-button color="primary">Matches
+                                    <ion-input readonly>{{ top.matches }}</ion-input>
+                                </ion-button>
+                            </div>
+                        </ion-col>
+                        <ion-col>
+                            <div>
+                                <ion-button color="primary">Platform
+                                    <ion-input readonly>{{ top.platform }}</ion-input>
+                                </ion-button>
+                            </div>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+
+
+</ion-content>
