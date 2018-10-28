@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="saitamapps.fortnitestats" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>fortniteStats</name>
+    <name>Fortnite Stats</name>
     <description>Fortnite Stats by Saitamapps</description>
     <author email="mati.pierdona@gmail.com" href="https://saitamapps.com/">Saitamapps Team</author>
     <content src="index.html" />
@@ -80,9 +80,20 @@
     <plugin name="cordova-plugin-statusbar" spec="2.4.2" />
     <plugin name="cordova-plugin-device" spec="2.0.2" />
     <plugin name="cordova-plugin-splashscreen" spec="5.0.2" />
-    <plugin name="cordova-plugin-ionic-webview" spec="^2.0.0" />
     <plugin name="cordova-plugin-ionic-keyboard" spec="^2.0.5" />
     <plugin name="cordova-plugin-admob-free" spec="0.21.0">
         <variable name="ADMOB_APP_ID" value="ca-app-pub-1784714941232014/2763825257" />
     </plugin>
+    <plugin name="cordova-android-support-gradle-release" spec="^1.4.5">
+        <variable name="ANDROID_SUPPORT_VERSION" value="27.+" />
+    </plugin>
+    <plugin name="cordova-plugin-crosswalk-webview" spec="2.4.0">
+        <variable name="XWALK_VERSION" value="23+" />
+        <variable name="XWALK_LITEVERSION" value="xwalk_core_library_canary:17+" />
+        <variable name="XWALK_COMMANDLINE" value="--disable-pull-to-refresh-effect" />
+        <variable name="XWALK_MODE" value="embedded" />
+        <variable name="XWALK_MULTIPLEAPK" value="true" />
+    </plugin>
+    <engine name="android" spec="^5.1.1" />
+    <engine name="browser" spec="5.0.4" />
 </widget>
