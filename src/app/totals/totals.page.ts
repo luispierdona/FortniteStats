@@ -15,7 +15,7 @@ export class TotalsPage implements OnInit {
       const bannerConfig: AdMobFreeBannerConfig = {
           // add your config here
           // for the sake of this example we will just use the test config
-          // id: 'ca-app-pub-1784714941232014/2763825257',
+          id: 'ca-app-pub-1784714941232014~1347921361',
           isTesting: false,
           autoShow: true
       };
